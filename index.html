@@ -1,30 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Font Style Playground</title>
-  <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto&family=Pacifico&family=Open+Sans&family=Raleway&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <h2>Font Style Playground</h2>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Font Style Playground</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto&family=Pacifico&family=Open+Sans&family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div>
+      <h2>Font Style Playground</h2>
+      <div id="output">Your entered Text.</div>
 
-  <div id="output">Your entered Text.</div>
+      <input type="text" id="textInput" placeholder="Enter Text Here." />
 
-  <input type="text" id="textInput" placeholder="Enter Text Here." />
+      <div>
+        <label for="fontSelect">Choose Font: </label>
+        <select id="fontSelect">
+          <option value="'Roboto', sans-serif">Roboto</option>
+          <option value="'Lobster', cursive">Lobster</option>
+          <option value="'Pacifico', cursive">Pacifico</option>
+          <option value="'Open Sans', sans-serif">Open Sans</option>
+          <option value="'Raleway', sans-serif">Raleway</option>
+        </select>
+      </div>
+    </div>
 
-  <div>
-    <label for="fontSelect">Choose Font: </label>
-    <select id="fontSelect">
-      <option value="'Roboto', sans-serif">Roboto</option>
-      <option value="'Lobster', cursive">Lobster</option>
-      <option value="'Pacifico', cursive">Pacifico</option>
-      <option value="'Open Sans', sans-serif">Open Sans</option>
-      <option value="'Raleway', sans-serif">Raleway</option>
-    </select>
-  </div>
-
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
