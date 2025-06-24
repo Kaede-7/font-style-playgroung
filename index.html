@@ -11,21 +11,29 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div>
-      <h2>Font Style Playground</h2>
-      <div id="output">Your entered Text.</div>
+    <div id="container">
+      <h2 id="heading">Font Style Playground</h2>
+      <div id="output"></div>
 
       <input type="text" id="textInput" placeholder="Enter Text Here." />
 
       <div>
         <label for="fontSelect">Choose Font: </label>
         <select id="fontSelect">
+          <option value="'Arial', sans-serif">Arial</option>
           <option value="'Roboto', sans-serif">Roboto</option>
           <option value="'Lobster', cursive">Lobster</option>
           <option value="'Pacifico', cursive">Pacifico</option>
           <option value="'Open Sans', sans-serif">Open Sans</option>
           <option value="'Raleway', sans-serif">Raleway</option>
         </select>
+        <div class="controls">
+          <label><input type="checkbox" id="boldCheckbox" /> Bold</label>
+          <label><input type="checkbox" id="italicCheckbox" /> Italic</label>
+          <label
+            ><input type="checkbox" id="underlineCheckbox" /> Underline</label
+          >
+        </div>
       </div>
     </div>
 
