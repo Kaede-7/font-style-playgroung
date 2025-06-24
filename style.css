@@ -9,11 +9,12 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
-  background-color: #b1b6a0;
+  background-color: #9a9c95;
 }
 
 #container {
   width: 340px;
+  height: 375px;
   padding: 25px;
   border-radius: 16px;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
@@ -30,8 +31,6 @@ body {
 #output {
   padding: 10px 14px;
   margin: 12px 0;
-  border: 1px solid #000000;
-  border-radius: 8px;
   background-color: #f8f8f8;
   min-height: 40px;
 }
@@ -71,4 +70,34 @@ label {
 
 .controls label {
   margin: 5px 10px;
+}
+
+input[type="checkbox"] {
+  accent-color: rgb(75, 75, 75);
+}
+
+label[for="fontSelect"] {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #444;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#fontSelect {
+  width: 100%;
+  padding: 8px 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: white;
+  cursor: pointer;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#fontSelect:focus {
+  outline: none;
+  border-color: #888;
+  box-shadow: 0 0 6px rgba(136, 136, 136, 0.5);
 }
